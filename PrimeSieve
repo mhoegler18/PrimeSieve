@@ -1,0 +1,52 @@
+public class EratosthenesPrimeSieve {
+ int obergrenze;
+    /**
+     *
+     * @param p
+     * @return 
+     */
+    
+    
+        public EratosthenesPrimeSieve(int ober){
+            this.obergrenze= ober;
+        }
+
+        public boolean isPrime(int p){
+         for(int i = 2; i <=obergrenze; i++){
+             boolean checker = true;
+             for(int j = 2; j<i && checker; j++){
+                 if((i%j ==0)){
+                     checker = false;
+                 }
+             }
+         }
+         return true;
+            
+        }
+    
+        public void printPrime(){
+            int i = 1;
+            obergrenze = 200;
+            boolean prüfer = true;
+            while (i<obergrenze ){
+              for(int j = 2; j <i-1; j++){
+                  if(i%j ==0){
+                      prüfer = false;
+                  }
+              } 
+              if(prüfer){
+                  System.out.println(i);
+              }
+              else{
+                  prüfer = true;
+              }
+              i++;
+            }
+        }
+        public int calculatorForPrimes(){
+            
+            
+            
+            return 0;
+        }
+}
