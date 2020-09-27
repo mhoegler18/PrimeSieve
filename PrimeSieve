@@ -1,4 +1,4 @@
-public class EratosthenesPrimeSieve {
+mmpublic class EratosthenesPrimeSieve {
  int obergrenze;
     /**
      *
@@ -48,5 +48,6 @@ public class EratosthenesPrimeSieve {
             
             
             return 0;
+	Manuel Högler
         }
 }
